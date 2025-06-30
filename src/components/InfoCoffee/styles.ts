@@ -50,7 +50,21 @@ export const InfoCoffeeContainer = styled.div`
     /* flex-wrap: wrap; */
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1439px) {
+    padding-inline: 90px;
+
+    h1 {
+      font-size: 40px;
+      line-height: 52px;
+    }
+
+    .info-slide {
+      flex-wrap: wrap;
+      margin-top: 52px;
+    }
+  }
+
+  @media (max-width: 1080px) { 
 
   }
 `;
@@ -79,6 +93,6 @@ export const TextCoffee = styled.div<TextCoffeeProps>`
     color: #574f4d;
     font-family: Roboto;
     font-size: 16px;
-    line-height:20.8px;
+    line-height: 20.8px;
   }
 `;

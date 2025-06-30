@@ -13,10 +13,10 @@ export function Home() {
         altLogo="Logo Coffee Delivery"
       />
       <InfoCoffee />
-      <Cart 
+      {/* <Cart 
       image={tradicionalCoffee}
 
-      />
+      /> */}
 
     </HomeContainer>
   )

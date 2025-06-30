@@ -118,4 +118,5 @@ export const CartContainer = styled.div`
       cursor: pointer;
     }
   }
+
 `;
