@@ -1,17 +1,8 @@
-import { CartContainer } from "./styles.ts"
+import { CartContainer } from "./styles.ts";
 import { ShoppingCartSimple, Plus, Minus } from "phosphor-react";
 
-
-type CartProduct = {
-  id: number;
-  quantity: number;
-  price: number;
-  name: string;
-  description: string;
-  image: string;  
-}
-
-interface CartProps {
+// Exportando a interface corretamente
+export interface CartProps {
   tag: string;
   title: string;
   description: string;
@@ -20,20 +11,18 @@ interface CartProps {
   quantity: number;
 }
 
-
-
 export function Cart({ image, tag, title, description, price, quantity }: CartProps) {
   return (
     <div>
       <CartContainer>
-        <img src={image} />
+        <img className="product-image" src={image} alt={title} />
         <span className="type-product">{tag}</span>
         <span className="title-product">{title}</span>
         <p className="description-product">{description}</p>
         <div className="add-product-container">
           <div className="price-product">
             <span className="simbol-price">R$ </span>
-            <span className="price">{price}</span>
+            <span className="price">{price.toFixed(2)}</span>
           </div>
           <div className="quantity-container">
             <button>

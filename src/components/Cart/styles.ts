@@ -1,12 +1,28 @@
 import styled from "styled-components";
 
 export const CartContainer = styled.div`
+  position: relative;
+  padding-top: 100px;
+
   max-width: 256px;
+  width: 256px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 6px 36px;
   background: #f3f2f2;
+
+  /* img {
+    width: 120px;
+    position: relative;
+    top: -20px;
+  } */
+  .product-image {
+    position: absolute;
+    top: -20px;
+    width: 120px;
+  }
 
   .type-product {
     width: max-content;
@@ -36,7 +52,8 @@ export const CartContainer = styled.div`
   }
 
   .description-product {
-    max-width: 216px;
+    width: 216px;
+    height: 36px;
     color: var(--Base-Label, #8d8686);
     text-align: center;
     font-family: Roboto;
@@ -49,8 +66,6 @@ export const CartContainer = styled.div`
 
   .add-product-container {
     display: flex;
-    margin-bottom: 20px;
-
     .price-product {
     }
 

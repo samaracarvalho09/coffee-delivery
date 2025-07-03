@@ -3,7 +3,6 @@ import { InfoCoffeeContainer, TextCoffee } from "./styles.ts";
 import CoffeeImagem from "../../assets/images/slide-coffee-image.png"
 
 
-
 export function InfoCoffee() {
 
   return (
