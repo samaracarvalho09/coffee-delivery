@@ -22,4 +22,5 @@ display: flex;
 gap: 32px;
 flex-wrap: wrap;
 padding-inline: 160px;
+margin-bottom: 150px;
 `;

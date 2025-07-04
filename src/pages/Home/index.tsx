@@ -7,7 +7,9 @@ import { Cart } from "../../components/Cart";
 import type { CartProps } from "../../components/Cart";
 
 import tradicionalCoffee from "../../assets/images/type-coffees/american-coffee.png"; // Imagem importada corretamente
-import { Footer } from "../../components/Footer/index.tsx";
+// import { Footer } from "../../components/Footer/index.tsx";
+import { FooterContainer } from "../../components/Footer/styles.ts";
+import { AddressForm } from "../../components/AddressForm/index.tsx";
 
 export function Home() {
   const cartMockList: CartProps[] = [
@@ -113,14 +115,15 @@ export function Home() {
     <HomeContainer>
       <Header logo={logoCoffeeDelivery} altLogo="Logo Coffee Delivery" />
       <InfoCoffee />
-      <TitleCoffeContainer>Nossos cafés</TitleCoffeContainer>
+      {/* <TitleCoffeContainer>Nossos cafés</TitleCoffeContainer>
       <GroupCart>
-      {cartMockList.map((item, index) => (
-        <Cart key={index} {...item} />
-      ))}
+        {cartMockList.map((item, index) => (
+          <Cart key={index} {...item} />
+        ))}
 
-      </GroupCart>
-      <Footer />
+      </GroupCart> */}
+      <AddressForm></AddressForm>
+      <FooterContainer />
     </HomeContainer>
   );
 }
